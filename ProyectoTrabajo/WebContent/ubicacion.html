@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nunca Solos   ** Albergue para mascotas ** </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimun-scale=1"> 
+    <link rel="stylesheet" href='css/style1.css'>
+    <link rel="stylesheet" href='css/css1.css'>
+    <link rel="stylesheet" href='css/ubicacion.css'>
+    <link rel="stylesheet" href='css/adopcion.css'>
+ </head>
+      <body>
+       <header>
+       
+        <div class="cabecera">
+           
+            <h1 class="logo"><a title="home" href="index.jsp"><img src="img/logo1.1.png" alt="home" width="95" height="60"></a>Nunca Solos</h1>
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-paragraph-justify" for="menu-bar" id="btn-menu"></label>
+         <!--PAra trabajar con ul li -->
+            <nav class="menu">
+            <!--headrmenu-->  
+               <ul class="des">
+               <!--nav des -->
+                <li><a title"Home" href="index.jsp">Inicio</a></li>
+                <li><a  href="Adopcion.html">Mascotas</a>
+                   <ul>
+                    <li><a title"Adopcion"  href="Adopcion.html">Adopción</a></li>
+                    <li><a href="">Perros</a></li>
+                    <li><a href="">Gatos</a></li>
+                   </ul>
+                </li>
+                <li><a title"Visítanos" href="">Ubicación</a></li>
+                <li><a title"Contáctanos" href="Formulario.html">Contacto</a></li>
+                <li><a title"Colaboración" href="Colabora.html">Colabora</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+     <div class="visitar">
+          <!--main-->
+            <div class="slide">
+             <div class="fotos">
+              <img src="img/slide1.jpg" alt="">
+              <img src="img/slide2.jpg" alt="">
+              <img src="img/slide3.jpg" alt="">
+              <img src="img/slide4.jpg" alt="">
+              <img src="img/slide5.jpg" alt="">
+              </div>
+          </div>
+      <section class="lugar">
+        
+         
+         <h2 class="titulo">¿Estas buscando un nuevo compañero?</h2>
+         <h2 class="titulo">Visítanos</h2>
+        <hr>
+         <div class="mapa">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.7905343029165!2d-3.694097385010035!3d40.36916867937071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226f76fa993bf%3A0xee1744cd04320f15!2sCalle+Antequera%2C+28041+Madrid!5e0!3m2!1ses!2ses!4v1497364312003" width="600" height="450" frameborder="10" style="border:0" allowfullscreen></iframe>
+         </div>
+     </section>
+     
+     </div> 
+       <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.slides.js"></script>
+
+    <script>
+	$(function(){
+  $(".fotos").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+          </script>
+
+     
+     <footer id="final"> 
+         <div class="cabecera">
+             <p class="copy">Jhonatan Ruiz &copy; 2017</p>
+             <div class="sociales">
+                 <a class="icon-google-plus" href=""></a>
+                 <a class="icon-facebook2" href=""></a>
+                 <a class="icon-instagram" href=""></a>
+                 <a class="icon-twitter" href=""></a>
+             </div>
+         </div>
+     </footer>
+    </body>
+    
+
+    
+</html>

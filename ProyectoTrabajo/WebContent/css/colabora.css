@@ -1,0 +1,75 @@
+main  {
+    font-size:16px;
+    font-family: fantasy;
+   font-weight:normal;
+	margin-bottom:.10em;
+    padding-top: 95px;
+    
+}
+body{
+    font-family: 'Kumar One', cursive;
+    padding-top: 95px;
+}
+main {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#fff;
+	padding:20px;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.75);
+	
+}
+
+.titlep{
+    margin-bottom: 10px;
+    color: rgba(134, 55, 158, 1);
+    font-weight:normal;
+    font-size: 40px;
+}
+.title{
+    font-weight:normal;
+    margin-bottom: 1em;
+    color: rgba(134, 55, 158, 1);
+}
+
+ hr {
+   margin-bottom: 1em;
+     height: 2px;
+     background: #4357ad;
+    
+}
+main .texto h1,  p {
+    display: inline-block;
+    
+   
+}
+main .texto p{
+    margin-bottom: 1em;
+    font-family:cursive;
+}
+.boton{
+    text-align: center;
+    margin-right: 340px;
+    margin-left: 340px;
+    vertical-align: baseline;
+    font-weight: normal;
+    font-stretch: normal;
+    border-style: solid;
+    background-color:rgba(134, 55, 158, 1);
+    color:rgba(255, 255, 255, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ main a{
+    text-decoration: none;
+}
+.texto a{
+    color:black;
+}
+.texto a:hover{
+    background-color:rgba(134, 55, 158, 1);
+}
+.boton:hover { 
+    background-color: rgba(255,255,255,0.7);
+    color:rgba(255, 255, 255, 1);
+}

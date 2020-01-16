@@ -1,0 +1,29 @@
+
+#ultimo h2, h3, h4 {
+    text-align: center;
+    width: 100%;
+}
+
+#ultimo .cabecera{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#ultimo article{
+    width: 230px;
+    padding: 10px;
+    
+}
+#ultimo img{
+    width: 100%;
+    max-width: 280px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #000;
+    
+    
+}
