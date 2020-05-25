@@ -42,8 +42,8 @@ public class Tester {
 		Anuncio a = new Anuncio();
 		a.setAutor(u);
 		a.setFechaAnuncio(LocalDateTime.now());
-		a.setDireccion("IndraHijaputa");
-		a.setDetallesoferta("Lamierdadelcentro");
+		a.setDireccion("callejuela");
+		a.setDetallesoferta("Centroloop");
 		a.setCiudad("Madrid");
 		if(ga.persist(a)) {
 			System.out.println("Correcto");
