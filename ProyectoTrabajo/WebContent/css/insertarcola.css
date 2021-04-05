@@ -1,0 +1,41 @@
+body{
+	background-color:#FFC;
+}
+.formulario td {
+    margin: 10px auto;
+    width: auto;
+}
+
+
+table{
+	background:#FF6;
+
+	border:solid 2px #FF0000;
+    justify-content: flex-end;
+    margin: 10px auto;
+    width: auto;
+}
+
+td{
+    width: 30%;
+    padding: 10px;
+    padding-right: 10px;
+    
+}
+#final{
+    background: #FFC;
+}
+
+#enviar,#reset{
+    margin-left: -150px;
+    background-color:rgba(134, 55, 158, 1)
+    
+}
+#enviar:hover ,#reset:hover { 
+    background-color: rgba(134, 55, 158, 0.3);
+    color:rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+
+
