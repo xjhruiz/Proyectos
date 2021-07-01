@@ -8,7 +8,7 @@ DB_CONF = {
         'port': 3306,
         'user': 'root',
         'passwd': '',
-        'db': 'osticketcajeros'
+        'db': 'mydb'
 }
 # Creo la conexion a db.
 
