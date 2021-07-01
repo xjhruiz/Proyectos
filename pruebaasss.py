@@ -11,13 +11,13 @@ DB_CONF = {
         'db': 'osticketcajeros'
 }
 # Creo la conexion a db.
-# connection = pymysql.connect(host='localhost',user='root',password='',db='cp') # LOCAL
-# connection = pymysql.connect(host='localhost', user='root', password='', db='osticketcajeros') # SERVIDOR
+
+# connection = pymysql.connect(host='localhost', user='root', password='', db='mydb') # SERVIDOR
 connection = pymysql.connect(**DB_CONF) # 2Forma
 
 try:
 	# Creo un libro de trabajo (workbook) y le a�ado una hoja de trabajo (worksheet).
-	workbook = xlsxwriter.Workbook('C:/Users/Zelenza/Desktop/pruebasCSV/pruebasIncidenciasPy2.xlsx') # LOCAL ruta absoluta
+	workbook = xlsxwriter.Workbook('C:/Users/Desktop/pruebasCSV/pruebasIncidenciasPy2.xlsx') # LOCAL ruta absoluta
 	# workbook = xlsxwriter.Workbook('./tmp/total.xlsx') # SERVIDOR
 	worksheet = workbook.add_worksheet("InformeIncidenciasCerradas")
 
