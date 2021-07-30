@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bomba.css">
+    <title>Bomba 2.0</title>
+</head>
+
+<body>
+    <div class="inicio" id="inicio">
+        <main>
+            <h1>Bienvenido al juego Desactiva la bomba</h1>
+            <div class="contenedor">
+                <p><label for="nombre-jugador"> Introduzca su nombre para empezar el juego</label><input type="text"
+                        name="nombre" id="nombre-jugador"></p>
+                <button type="button" id="btn-play-game">Jugar</button>
+            </div>
+        </main>
+    </div>
+    <div class="juego" id="juego">
+        <h1>Bienvenido <span id="mensajeJuego"></span></h1>
+        <p> Tiene 30 segundos para desactivar la bomba </p>
+        <p> Uno de estos tres botones desactivará la bomba, otro la acelerará y el otro la detonará </p>
+        <p> Mucha suerte. Pulse el correcto !! </p>
+        <p id="cont">00:00</p>
+        <button id="btn-green" class="btn-bomb" onclick="asignarColorBtn('green')">Verde</button>
+        <button id="btn-blue" class="btn-bomb" onclick="asignarColorBtn('blue')">Azul</button>
+        <button id="btn-red" class="btn-bomb" onclick="asignarColorBtn('red')">Rojo</button>
+        <button type="button" id="btn-active-bomb">Activar Bomba</button>
+        <button type="button" id="btn-new-game">Nuevo Juego</button>
+    </div>
+    <div id="bum"></div>
+
+    <script src="bomba.js"></script>
+</body>
+
+</html>
