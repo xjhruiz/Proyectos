@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        <!-- <a href="" class="typewrite" data-period="2000"
+            data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+            <span class="wrap"></span>
+        </a> -->
+    </h1>
+    <button type="button" id="btn1"> btn1</button>
+    <button type="button" id="btn2"> btn2</button>
+    <button type="button" id="btn3"> btn3</button>
+    <!-- <script src="appcodep.js"></script> -->
+    <script>
+        function aleatoriobtn(acciones) {
+            let sizeAcciones = acciones.length;
+            let axu, random;
+
+
+            while (0 !== sizeAcciones) {
+                random = Math.floor(Math.random() * sizeAcciones);
+                sizeAcciones -= 1;
+                aux = acciones[sizeAcciones];
+                acciones[sizeAcciones] = acciones[random];
+                acciones[random] = aux;
+            }
+            return acciones;
+        }
+
+        const $iD = selectorById => document.getElementById(selectorById);
+
+        const fun1 = () => {
+            alert("funcion 1")
+        }
+        const fun2 = () => {
+            alert("funcion 2")
+        }
+        const fun3 = () => {
+            alert("funcion 3")
+        }
+        const fun4 = () => {
+            alert("funcion 4")
+        }
+        const fun5 = () => {
+            alert("funcion 5")
+        }
+        let arrayRandom = aleatoriobtn([fun1, fun2, fun3]);
+        // let numAleatorios = aleatoriobtn(1, 2, 3, 4, 5, 32, 34, 5, 23, 5, 6434, 345, 23, 54, 5)
+        console.log({
+            arrayRandom
+            //   numAleatorios
+        });
+        $iD("btn1").addEventListener('click', () => {
+            arrayRandom[0]();
+        });
+        $iD("btn2").addEventListener('click', () => {
+            arrayRandom[1]();
+        });
+        $iD("btn3").addEventListener('click', () => {
+            arrayRandom[2]();
+        });
+    </script>
+</body>
+
+</html>
